@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Universal selector */
+        * {
+            font-family: Arial;
+        }
+
+        /* Element selector */
+        h1 {
+            color: green;
+        }
+
+        /* ID selector */
+        #special {
+            background-color: yellow;
+        }
+
+        /* Class selector */
+        .highlight {
+            color: red;
+        }
+
+        /* Group selector */
+        h2, p {
+            font-size: 18px;
+        }
+
+        /* Descendant selector */
+        div p {
+            border: 1px solid gray;
+            padding: 5px;
+        }
+
+        /* Child selector */
+        div > p {
+            font-weight: bold;
+        }
+
+        /* Attribute selector */
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Main Heading</h1>
+    <h2 class="highlight">Subheading</h2>
+    <p>This is a paragraph.</p>
+
+    <div>
+        <p>This paragraph is inside a div.</p>
+        <span>
+            <p>This paragraph is inside a span inside div.</p>
+        </span>
+    </div>
+
+    <p id="special">This paragraph has an ID selector.</p>
+
+    <form>
+        <input type="text" placeholder="Text input"><br><br>
+        <input type="password" placeholder="Password input">
+    </form>
+
+</body>
+</html>

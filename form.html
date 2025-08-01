@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <form>
+        <!-- Name -->
+        <label>Enter your Name:</label>
+        <input type="text" name="name" placeholder="Enter your name"><br><br>
+
+        <!-- Email -->
+        <label>Enter your mail</label>
+        <input type="email" name="email"><br><br>
+
+        <!-- Date of Birth and Time -->
+        <input type="date" name="dob">
+        <input type="datetime-local" name="datetime"><br><br>
+
+        <!-- Mobile Numbers -->
+        <label>Enter your mobile number</label>
+        <input type="text" name="mobile1">
+        <input type="text" name="mobile2"><br><br>
+
+        <!-- Gender -->
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other<br><br>
+
+        <!-- Subjects -->
+        <label>Subjects</label>
+        <input type="checkbox" name="subject" value="maths"> Maths
+        <input type="checkbox" name="subject" value="english"> English
+        <input type="checkbox" name="subject" value="science"> Science
+        <input type="checkbox" name="subject" value="marathi"> Marathi<br><br>
+
+        <!-- File Upload -->
+        <label>Upload resume</label>
+        <input type="file" name="resume"><br><br>
+
+        <!-- Feedback -->
+        <label>Enter your feedback</label><br>
+        <textarea rows="7" cols="40" name="feedback"></textarea><br><br>
+
+        <!-- Dropdown and Submit -->
+        <select name="country_code">
+            <option>Country Code</option>
+            <option value="+91">+91</option>
+            <option value="+1">+1</option>
+            <option value="+44">+44</option>
+        </select>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>
